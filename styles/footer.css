@@ -1,0 +1,101 @@
+.bg-body-tertiary {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 25%, rgb(22, 0, 32) 90%);
+}
+.container{
+    background-color: rgb(29, 0, 36);
+    color: aliceblue;
+    border-radius: 30px;
+}
+.row {
+    --mdb-gutter-x: 1.5rem;
+    --mdb-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--mdb-gutter-y));
+    margin-right: calc(-0.5* var(--mdb-gutter-x));
+    margin-left: calc(-0.5* var(--mdb-gutter-x));
+    justify-content: space-between;
+}
+#nome{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: rgb(196, 196, 196) !important;
+}
+.card {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(29, 0, 36);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+  border-radius: 30px;
+}
+/* instagram*/
+.containerOne:hover {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 100%);
+  transition-duration: .3s;
+}
+/* git*/
+.containerTwo:hover {
+  background-color: #000000;
+  color: aliceblue;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #20d32f;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
